@@ -46,7 +46,7 @@ a {
 
 .home-img  {
     /* make the image have a shadow */
-    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.4);
     border-radius: 3%;
     transition: box-shadow 0.5s linear; /* vendorless fallback */
     -o-transition: box-shadow 0.5s linear; /* opera */
@@ -57,7 +57,7 @@ a {
 
 .home-img:hover {
     /* make the image have a shadow */
-    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.8);
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.6);
     cursor: default;
 }
 
@@ -116,24 +116,27 @@ a {
     transform: translate(-50%, -50%);
 }
 
+@keyframes float1 {
+    0% {
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+        transform: skew(-0.015turn, 4.5deg);
+    }
+	50% {
+		box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+        transform: skew(-0.02turn, 6deg);
+	}
+    100% {
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+        transform: skew(-0.015turn, 4.5deg);
+    }
+}
+
 .project-ms-img  {
-    transform: skew(-0.02turn, 6deg);
     position: relative;
     top: 5%;
     border-radius: 3%;
-    /* make the image have a shadow */
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
-    transition: box-shadow 0.5s linear; /* vendorless fallback */
-    -o-transition: box-shadow 0.5s linear; /* opera */
-    -ms-transition: box-shadow 0.5s linear; /* IE 10 */
-    -moz-transition: box-shadow 0.5s linear; /* Firefox */
-    -webkit-transition: box-shadow 0.5s linear; /*safari and chrome */
-}
+    animation: float1 8s ease-in-out infinite;
 
-.project-ms-img:hover {
-    /* make the image have a shadow */
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.8);
-    cursor: default;
 }
 
 .project-sb-container {
@@ -173,24 +176,29 @@ a {
     transform: translate(-50%, -50%);
 }
 
+@keyframes float2 {
+    0% {
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+        transform: translatey(0px);
+        transform: skew(0.015turn, -4.5deg);
+    }
+	50% {
+		box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+		transform: translatey(20px);
+        transform: skew(0.02turn, -6deg);
+	}
+    100% {
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+        transform: translatey(0px);
+        transform: skew(0.015turn, -4.5deg);
+    }
+}
+
 .project-sb-img  {
-    transform: skew(0.02turn, -6deg);
     position: relative;
     top: 5%;
     border-radius: 3%;
-    /* make the image have a shadow */
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
-    transition: box-shadow 0.5s linear; /* vendorless fallback */
-    -o-transition: box-shadow 0.5s linear; /* opera */
-    -ms-transition: box-shadow 0.5s linear; /* IE 10 */
-    -moz-transition: box-shadow 0.5s linear; /* Firefox */
-    -webkit-transition: box-shadow 0.5s linear; /*safari and chrome */
-}
-
-.project-sb-img:hover {
-    /* make the image have a shadow */
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.8);
-    cursor: default;
+    animation: float2 12s ease-in-out infinite;
 }
 
 .project-hd-container {
