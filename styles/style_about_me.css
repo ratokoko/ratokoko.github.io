@@ -66,6 +66,10 @@ a:hover {
         overflow-wrap: break-word;
         font-size: 1.5vw;
     }
+
+    #line_breaks {
+        display: none;
+    }
 }
 
 @media (max-width: 1099px) {
@@ -89,5 +93,9 @@ a:hover {
         width:30vw;
         height: auto;
         border-radius: 100vw;
+    }
+
+    #line_breaks {
+        display: initial;
     }
 }
