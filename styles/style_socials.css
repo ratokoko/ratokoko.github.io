@@ -42,6 +42,9 @@ a:hover {
         width:33.3334vw;
         height: auto;
         border-radius: 100vw;
+
+        max-height: 80vh;
+        max-width: 80vh;
     }
 
     /*#title {
@@ -58,6 +61,9 @@ a:hover {
         text-align: left;
 
         font-size:1.7vw;
+
+        max-height: 80vh;
+        max-width: 80vh;
     }
 }
 
@@ -72,13 +78,12 @@ a:hover {
 
         text-align: left;
         font-size: 5vw;
-        max-height: 90%;
+        
+        max-height: 90vh;
+        inline-size: 80vw;
     }
     
     #home_img {
         display: none;
-        width:30vw;
-        height: auto;
-        border-radius: 100vw;
     }
 }
