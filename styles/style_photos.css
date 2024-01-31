@@ -71,6 +71,9 @@ table {
         width:33.3334vw;
         height: auto;
         border-radius: 100vw;
+
+        max-height: 80vh;
+        max-width: 80vh;
     }
 
     /*#title {
@@ -87,6 +90,9 @@ table {
         text-align: left;
 
         font-size:2vw;
+
+        max-height: 80vh;
+        max-width: 80vh;
     }
 }
 
@@ -101,12 +107,12 @@ table {
 
         text-align: left;
         font-size: 7vw;
+
+        max-height: 90vh;
+        inline-size: 80vw;
     }
     
     #home_img {
         display: none;
-        width:66.6667vw;
-        height: auto;
-        border-radius: 100vw;
     }
 }
