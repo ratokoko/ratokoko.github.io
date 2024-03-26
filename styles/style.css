@@ -54,11 +54,13 @@ a:hover {
     #nametag {
         position: absolute;
         top: 50%;
-        left: 66.6667%;
+        left: 70.35%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%); /* IE 9 */
         -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
         text-align: left;
+
+        inline-size: 25vw;
 
         font-size:2vw;
 
